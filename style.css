@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    border: 1px solid lightgray;
+    padding: 40px;
+}
+.register-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+label{
+    padding: 0 10px;
+    font-family: 'Mulish', sans-serif;
+    color: gray;
+}
+
+label[for = "male"], label[for = "female"]{
+    
+    color: black;
+    margin-left: 5px;
+}
+label[for = "email"]{
+    color: red;
+}
+input[type = "email"]{
+    border-bottom: 2px solid red !important;
+}
+input[type = "text"], input[type = "password"], input[type = "email"]{
+    
+    font-size: 17px;
+    outline: 0;
+    padding: 0px 10px 10px 12px;
+    border: 0;
+    border-bottom: 1px solid gray;
+    width: 500px;
+    height: 35px;
+    margin-bottom: 40px;
+    font-family: 'Mulish', sans-serif;
+}
+input[type = "radio"]{
+    background-color: #35dae6;
+    width: 20px;
+    height: 20px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    margin-top: 20px;
+    width: 500px;
+    height: 60px;
+    resize: none;
+    border: 0;
+    border-bottom:2px solid #35dae6;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    padding: 10px;
+    line-height: 21px;
+}
+
+.gender{
+    display: flex;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 11px;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid gray;
+  }
+
+  .gender-label:hover input ~ .radiomark {
+    background-color: #fff;
+  }
+  .gender-label input:checked ~ .radiomark {
+    border: 2px solid #35dae6;
+  }
+  .radiomark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .gender-label input:checked ~ .radiomark:after {
+    display: block;
+  }
+  .gender-label .radiomark:after {
+   top: 3px;
+   left: 3px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: #35dae6;
+}
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkbox-label{
+    margin: 20px 0;
+  }
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid gray;
+    border-radius: 3px;
+  }
+
+.checkbox-label:hover input ~ .checkmark {
+    background-color: #fff;
+  }
+  
+  .checkbox-label input:checked ~ .checkmark {
+    background-color: #57BEBE;
+    border: 0;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-label input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-label .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.btn input{
+    position: absolute;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: #291C44;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+}
+
+.btn input{
+    position: absolute;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.submit{
+    background-color: #57BEBE;
+}
+
+i{
+    font-size: 17px !important;
+    color: #fff;
+}
+.reset{
+    margin-left: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 110px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: start;
+}
